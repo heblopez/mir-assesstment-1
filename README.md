@@ -58,7 +58,9 @@ En este proyecto, desarrollarás una aplicación web que consuma la [Fake Store 
 - **ProductCard-2**: Tiene un tiempo de **3 minutos**. Al finalizar este tiempo, el botón de comprar debe quedar inactivo.
 - **ProductCard-3**: Muestra un tiempo aleatorio, pero siempre desactiva el botón de comprar al concluir el conteo.
 
-![Ejemplo de comportamiento esperado](https://s3.amazonaws.com/makeitreal/images/classroom-prod/4bb1e1f7dac876a6e5f1ccb0eeb5b715.gif)
+<p align="center">
+  <img src="https://s3.amazonaws.com/makeitreal/images/classroom-prod/4bb1e1f7dac876a6e5f1ccb0eeb5b715.gif" alt="Ejemplo de comportamiento esperado">
+</p>
 
 ### Recursos Sugeridos:
 
