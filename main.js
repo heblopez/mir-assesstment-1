@@ -55,6 +55,25 @@ function showProducts(products) {
 
     card.appendChild(cardContent);
     container.appendChild(card);
+
+    let timeRemaining = Math.floor(Math.random() * 3 + 1) * 60;
+
+    const updateTimer = () => {
+      const minutes = Math.floor(timeRemaining / 60);
+      const seconds = timeRemaining % 60;
+      timer.textContent = `Tiempo restante: ${minutes}:${seconds < 10 ? '0' : ''}${seconds}`;
+
+      if (timeRemaining > 0) {
+        timeRemaining--;
+      } else {
+        button.disabled = true;
+        button.textContent = "Tiempo agotado";
+        clearInterval(intervalId);
+      }
+    };
+
+    updateTimer();
+    const intervalId = setInterval(updateTimer, 1000);
   });
 }
 
