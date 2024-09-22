@@ -12,7 +12,7 @@ async function fetchProducts() {
 function showProducts(products) {
   const container = document.querySelector("#productsContainer");
   products.forEach((product) => {
-    const card = document.createElement("div");
+    const card = document.createElement("article");
     card.className = "product-card";
 
     const img = document.createElement("img");
@@ -41,7 +41,7 @@ function showProducts(products) {
 
     const category = document.createElement("p");
     category.className = "product-card__category";
-    category.textContent = `Category: ${product.category}`;
+    category.textContent = product.category;
     cardContent.appendChild(category);
 
     const timer = document.createElement("p");
